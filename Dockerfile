@@ -6,8 +6,8 @@ RUN mkdir -p /var/www/html/weewx; \
     chmod 777 /var/www/html/weewx
 
 RUN yum -y update; \
-    yum install -y http://www.weewx.com/downloads/released_versions/weewx-3.9.1-1.rhel.noarch.rpm
-
+    yum install -y http://www.weewx.com/downloads/released_versions/weewx-4.5.1-1.el7.noarch.rpm
+    
 VOLUME [ "/var/lib/weewx" ]
 
 COPY root /
